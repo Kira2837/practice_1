@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdio.h>
+#include <stddef.h>
 #define SIZE 5
 
 int main()
