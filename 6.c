@@ -13,7 +13,7 @@ int main()
 
     for(i = 0;i < len;i++)
     {
-        if((('A' <= str[i]) && (str[i] >= 'Z')) || (('a' <= str[i]) && (str[i] >= 'z')))
+        if((('A' <= str[i]) && (str[i] <= 'Z')) || (('a' <= str[i]) && (str[i] <= 'z')))
         {
             printf("%c ", str[i]);
         }
