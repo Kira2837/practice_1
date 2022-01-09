@@ -23,7 +23,7 @@ int main()
     printf("identical elements: ");
     for(i = 0;i < SIZE; i++)
     {
-        for(j = i;j < SIZE; j++)
+        for(j = 0;j < SIZE; j++)
         {
             if(num1[i] == num2[j])
             {
