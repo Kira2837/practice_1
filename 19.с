@@ -1,0 +1,45 @@
+#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Chelbik
+{
+    char name[20];
+    size_t iq;
+};
+
+int main ()
+{
+    size_t num, i;
+    struct Chelbik* Cheliki;
+
+    printf("Enter the num of cheliksoidov: ");
+    scanf("%zu", &num);
+    fflush(stdin);
+    Cheliki = (struct Chelbik*)malloc(num*sizeof(struct Chelbik));
+    if(Cheliki == NULL)
+    {
+        return 1;
+    }
+
+    for(i = 0; i < num; i++)
+    {
+        printf("Enter the name: ");
+        scanf("%19[^\n]s", &Cheliki[i].name);
+        fflush(stdin);
+        printf("Enter the iq: ");
+        scanf("%zu", &Cheliki[i].iq);
+        fflush(stdin);
+    }
+
+    for(i = 0; i < num; i++)
+    {
+        printf("Chel %zu\n", i+1);
+        printf("Name: %s \n", Cheliki[i].name);
+        printf("iq: %zu \n", Cheliki[i].iq);
+    }
+
+    free((void*)Cheliki);
+
+    return 0;
+}
