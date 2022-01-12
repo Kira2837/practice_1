@@ -8,6 +8,10 @@ int main ()
     size_t i;
 
     mas = (int*)malloc(3*sizeof(mas[0]));
+    if(mas == NULL)
+    {
+        return 1;
+    }
 
     for(i = 0;i<3;i++)
     {
