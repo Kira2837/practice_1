@@ -14,4 +14,6 @@ int main ()
     sml_str[sizeof(sml_str)-1]='\0'
 
     printf("%s", sml_str);
+    
+    return 0;
 }
