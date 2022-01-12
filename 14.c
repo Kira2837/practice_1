@@ -15,4 +15,6 @@ int main ()
     strncat(sml_str, big_str, sizeof(sml_str)-strlen(sml_str)-1);
 
     printf("%s", sml_str);
+    
+    return 0;
 }
