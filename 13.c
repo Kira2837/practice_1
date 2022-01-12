@@ -11,6 +11,7 @@ int main ()
     scanf("%49[^\n]s", big_str);
 
     strncpy(sml_str, big_str, sizeof(sml_str)-1);
+    sml_str[sizeof(sml_str)-1]='\0'
 
     printf("%s", sml_str);
 }
